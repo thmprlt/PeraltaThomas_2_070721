@@ -3,7 +3,22 @@
     src: url(static/Raleway-Regular.ttf);
 }
 
-body
+*
 {
     font-family: 'Raleway';
+}
+
+.fas, .fa
+{
+    color: #0065FC;
+}
+
+.fa.fa-star
+{
+    color: #F2F2F2;
+}
+
+.fas.fa-map-marker-alt
+{
+    color: black;
 }
