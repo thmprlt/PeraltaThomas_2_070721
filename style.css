@@ -22,3 +22,68 @@
 {
     color: black;
 }
+
+/* EN-TÊTE */
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+#nhebergement
+{
+    padding-right: 75px;
+}
+
+#nactivites a
+{
+    padding-right: 75px;
+    color: rgb(102, 100, 100);
+}
+
+/* FOOTER */
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+footer ul
+{
+    list-style-type: none;
+}
+
+.lfooter
+{
+    width: 100%;
+    line-height: 30px;
+    padding-left: 50px;
+    padding: 15px;
+}
