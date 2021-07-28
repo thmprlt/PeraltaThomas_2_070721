@@ -45,15 +45,26 @@ nav a:hover
 
 #nhebergement
 {
+    text-align: center;
+}
+
+#nhebergement a
+{
     padding-right: 75px;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
 }
 
 #nactivites a
 {
     padding-right: 75px;
-    color: rgb(102, 100, 100);
+    color: rgb(92, 92, 92);
 }
 
+#nsinscrire a
+{
+    color: #0065FC;
+}
 /* FOOTER */
 
 footer
@@ -67,7 +78,7 @@ footer
 footer a
 {
     text-decoration: none;
-    color: black;
+    color: rgb(92, 92, 92);
 }
 
 footer a:hover
@@ -78,12 +89,12 @@ footer a:hover
 footer ul
 {
     list-style-type: none;
+    padding-left: 0px;
 }
 
 .lfooter
 {
     width: 100%;
     line-height: 30px;
-    padding-left: 50px;
     padding: 15px;
 }
