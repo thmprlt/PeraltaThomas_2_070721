@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(static/Raleway-Regular.ttf);
+}
+
+*
+{
+    font-family: 'Raleway';
+}
+
+.fas, .fa
+{
+    color: #0065FC;
+}
+
+.fa.fa-star
+{
+    color: #F2F2F2;
+}
+
+.fas.fa-map-marker-alt
+{
+    color: black;
+}
+
+
+
+/* EN-TÊTE */
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+#nhebergement
+{
+    text-align: center;
+}
+
+#nhebergement a
+{
+    padding-right: 75px;
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#nactivites a
+{
+    padding-right: 75px;
+    color: rgb(92, 92, 92);
+}
+
+#nsinscrire a
+{
+    color: #0065FC;
+}
+/* FOOTER */
+
+footer
+{
+    background-color: #F2F2F2;
+    display: flex;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+}
+
+footer a:hover
+{
+    text-decoration: underline;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.lfooter
+{
+    width: 100%;
+    line-height: 30px;
+    padding: 15px;
+}
