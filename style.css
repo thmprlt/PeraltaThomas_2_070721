@@ -10,7 +10,7 @@
 
 #bloc_page
 {
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -204,19 +204,25 @@ nav a:hover
     padding-top: 70px;
 }
 
-/* SECTION */
+/* SECTION HEBERGEMENTS */
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+}
 
 .hmarseille
 {
     background-color: #F2F2F2;
-    width: 50%;
-    padding: 10px;
+    width: 60%;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .hmarseille h2
 {
-    margin-left: 15px;
+    margin-left: 50px;
 }
 
 .backgreyheb
@@ -224,11 +230,12 @@ nav a:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 15px;
+    justify-content: center;
 }
 
 figure:hover
 {
+    cursor: pointer;
     transform: scale(1.05);
 }
 
@@ -255,6 +262,47 @@ figure:hover
 #afficherplus
 {
     font-weight: bold;
+    margin-left: 50px;
+}
+
+/* SECTION POPULAIRES */
+
+.backgreypop
+{
+    background-color: #F2F2F2;
+    width: 35%;
+    border-radius: 15px;
+}
+
+.backgreypop h2
+{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marseillepop
+{
+    display: flex;
+    background-color: white;
+    width: 70%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+}
+
+.photopop
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
 }
 
 /* FOOTER */
