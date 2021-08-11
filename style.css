@@ -300,10 +300,35 @@ figure:hover
 
 .photopop
 {
-    width: 100%;
+    width: 200px;
+    height: 150px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
 }
+
+/* ACTIVITES */
+
+.activ
+{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.figactiv1, .figactiv2
+
+{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+}
+
+.figactiv1
+{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* FOOTER */
 
