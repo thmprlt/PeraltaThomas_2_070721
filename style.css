@@ -8,6 +8,14 @@
     font-family: 'Raleway';
 }
 
+#bloc_page
+{
+    width: 100%;
+    margin: auto;
+}
+
+/* ICÔNES */
+
 .fas, .fa
 {
     color: #0065FC;
@@ -15,10 +23,15 @@
 
 .fa.fa-star
 {
-    color: #F2F2F2;
+    color: rgb(196, 196, 196);
 }
 
 .fas.fa-map-marker-alt
+{
+    color: black;
+}
+
+.fas.fa-chart-line
 {
     color: black;
 }
@@ -28,6 +41,8 @@ form
     display: flex;
 }
 
+/* BARRE DE RECHERCHE */
+
 #mapmarker
 {
     display: inline-block;
@@ -36,6 +51,7 @@ form
     padding: 12px 15px;
     border-radius: 10px 0 0 10px;
     text-align: center;
+    cursor: pointer;
 }
 
 input
@@ -63,10 +79,86 @@ input
     font-weight: bold;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
+    transition: 0.4s;
 }
 
+#searchbutton:hover
+{
+    background-color: #DEEBFF;
+    color: black;
+}
 
-/* EN-TÊTE */
+/* FILTRES */
+
+#pfiltre
+{
+    display: flex;
+}
+
+.filtre
+{
+    display: flex;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.fbouton
+{
+    display: flex;
+    position: relative;
+    margin-left: 30px;
+    border: 2px solid #dfdfdf;
+    border-left: none;
+    border-radius: 32px;
+    align-items: center;
+    padding: 0 26px 0 0;
+    cursor: pointer;
+}
+
+.fbouton:hover
+{
+    color: #0065FC;
+}
+
+.ficone
+{
+    display: flex;
+    background-color: #DEEBFF;
+    padding: 18px;
+    margin-right: 10px;
+    border-radius: 32px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+}
+
+#infop
+{
+    padding-left: 10px;
+}
+
+.infoicone
+{
+    border: 1px solid #dfdfdf;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+/* EN-TÊTE NAVIGATION */
+
+h1
+{
+    font-size: 20px;
+}
 
 nav ul
 {
@@ -79,11 +171,14 @@ nav ul
 nav a
 {
     text-decoration: none;
+    color: rgb(102, 101, 101);
 }
 
 nav a:hover
 {
     text-decoration: underline;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 #nhebergement
@@ -93,21 +188,75 @@ nav a:hover
 
 #nhebergement a
 {
-    padding-right: 75px;
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    margin-right: 75px;
+    padding-top: 70px;
 }
 
 #nactivites a
 {
-    padding-right: 75px;
-    color: rgb(92, 92, 92);
+    margin-right: 75px;
+    padding-top: 70px;
 }
 
 #nsinscrire a
 {
     color: #0065FC;
+    padding-top: 70px;
 }
+
+/* SECTION */
+
+.hmarseille
+{
+    background-color: #F2F2F2;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.hmarseille h2
+{
+    margin-left: 15px;
+}
+
+.backgreyheb
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+figure:hover
+{
+    transform: scale(1.05);
+}
+
+.phmarseille
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+}
+
+.photohebergement
+{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+}
+
+#afficherplus
+{
+    font-weight: bold;
+}
+
 /* FOOTER */
 
 footer
