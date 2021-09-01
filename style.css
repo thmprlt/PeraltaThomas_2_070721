@@ -600,15 +600,32 @@ footer ul
 
     .hmarseille{
         width: 100%;
+        background-color: white;
     }
 
     .backgreyheb{
         width: 100%;
         flex-direction: column;
         align-items: center;
+        flex-wrap: nowrap;
     }
 
     .phmarseille{
+        width: 90%;
+    }
+
+    .activ{
+        flex-direction: column;
+        padding-left: 5%;
+        margin-right: -5%;
+    }
+
+    .figactiv1, .figactiv2, .figactiv3, .figactiv4, .figactiv5, .figactiv6{
+        width: 90%;
+    }
+
+    .ph1, .ph2, .ph3, .ph4, .ph5, .ph6{
         width: 100%;
+        height: 130px;
     }
 }
