@@ -8,10 +8,15 @@
     font-family: 'Raleway';
 }
 
-#bloc_page
+body
 {
     width: 90%;
     margin: auto;
+}
+
+#logores
+{
+    padding-left: 2%;
 }
 
 /* ICÔNES */
@@ -36,16 +41,22 @@
     color: black;
 }
 
+.fas.fa-search
+{
+    display: none;
+}
+
 form
 {
     display: flex;
+    padding-left: 2%;
 }
 
 /* BARRE DE RECHERCHE */
 
 input::placeholder
 {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #mapmarker
@@ -106,6 +117,7 @@ input
     padding-top: 40px;
     font-weight: bold;
     font-size: 15px;
+    padding-left: 2%;
 }
 
 .fbouton
@@ -141,6 +153,7 @@ input
 {
     display: flex;
     align-items: center;
+    padding-left: 2%;
 }
 
 #infop
@@ -165,6 +178,12 @@ input
 h1
 {
     font-size: 20px;
+    padding-left: 2%;
+}
+
+#h1p
+{
+    padding-left: 2%;
 }
 
 nav ul
@@ -173,6 +192,7 @@ nav ul
     list-style-type: none;
     text-decoration: none;
     float: right;
+    padding-right: 2%;
 }
 
 nav a
@@ -184,8 +204,9 @@ nav a
 nav a:hover
 {
     text-decoration: underline;
-    border-top: 2px solid #0065FC;
+    border-top: solid #0065FC;
     color: #0065FC;
+  
 }
 
 #nhebergement
@@ -197,34 +218,55 @@ nav a:hover
 {
     text-decoration: none;
     margin-right: 75px;
-    padding-top: 70px;
+    padding-top: 62px;
 }
 
 #nactivites a
 {
     text-decoration: none;
     margin-right: 75px;
-    padding-top: 70px;
+    padding-top: 62px;
 }
 
 #nsinscrire a
 {
     text-decoration: none;
     color: #0065FC;
-    padding-top: 70px;
+    padding-top: 62px;
+}
+
+.mednav
+{
+    display: flex;
 }
 
 /* SECTION HEBERGEMENTS */
 
 .pheb
 {
-    font-size: 20px;
+    font-size: 18px;
+    padding-left: 5%;
+    margin-top: 4%;
+}
+
+.pheb2
+{
+    padding-left: 5%;
+    margin-top: -5%;
+}
+
+.starfa
+{
+    padding-left: 5%;
+    margin-top: -5%;
 }
 
 section
 {
     display: flex;
     justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .hmarseille
@@ -232,12 +274,12 @@ section
     background-color: #F2F2F2;
     width: 60%;
     border-radius: 15px;
-    padding: 0;
+    padding-top: 1%;
 }
 
 .hmarseille h2
 {
-    margin-left: 50px;
+    margin-left: 7%;
     margin-bottom: 10px;
     font-size: 26px;
 }
@@ -266,13 +308,14 @@ figure:hover
     padding: 5px;
     border-radius: 15px;
     box-shadow: 0 0 10px grey;
+    transition: 0.2s;
 }
 
 .photohebergement
 {
     border-radius: 15px 15px 0 0;
     width: 100%;
-    height: 110px;
+    height: 120px;
     object-fit: cover;
 }
 
@@ -280,15 +323,25 @@ figure:hover
 {
     font-size: 18px;
     font-weight: bold;
-    margin-left: 50px;
-    margin-bottom: 10px;
+    margin-left: 7%;
+    margin-top: 3%;
 }
 
 /* SECTION POPULAIRES */
 
 .ppop
 {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.ppop2
+{
+    margin-top: -5%;
+}
+
+.starfapop
+{
+    margin-top: 20%;
 }
 
 .backgreypop
@@ -296,6 +349,7 @@ figure:hover
     background-color: #F2F2F2;
     width: 30%;
     border-radius: 15px;
+    padding-bottom: 1%;
 }
 
 .backgreypop h2
@@ -303,7 +357,7 @@ figure:hover
     font-size: 26px;
     padding: 0 20px;
     padding-top: 10px;
-    margin-bottom: 10px;
+    padding-left: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -323,14 +377,28 @@ figure:hover
     padding: 5px;
     border-radius: 15px;
     box-shadow: 0 0 10px grey;
+    transition: 0.2s;
+}
+
+.marseillepop figcaption
+{
+    padding-left: 5%;
 }
 
 .photopop
 {
-    width: 200px;
+    width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
+}
+
+.photopop2
+{
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    width: 170px;
+    height: 150px;
 }
 
 /* ACTIVITES */
@@ -339,7 +407,9 @@ figure:hover
 
 #titreactiv
 {
-    padding-top: 20px;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    padding-left: 2%;
 }
 
 .activ p
@@ -352,7 +422,8 @@ figure:hover
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
+    padding-left: 2%;
 }
 
 .fortiles, .notreparc
@@ -370,6 +441,7 @@ figure:hover
     box-shadow: 0 0 10px grey;
     width: 20%;
     height: 100%;
+    transition: 0.2s;
 }
 
 .ph1, .ph4
@@ -386,6 +458,7 @@ figure:hover
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 10px grey;
+    transition: 0.2s;
 }
 
 .ph2, .ph3, .ph5, .ph6
@@ -423,7 +496,6 @@ footer
 {
     background-color: #F2F2F2;
     display: flex;
-    margin: 10px;
     justify-content: space-around;
     width: 100%;
 }
@@ -442,7 +514,7 @@ footer a:hover
 footer ul
 {
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .lfooter
@@ -452,3 +524,91 @@ footer ul
     padding: 15px;
 }
 
+/* RESPONSIVE */
+
+@media screen and (min-width: 375px) and (max-width: 667px)
+{
+
+    .hmarseille h2, .backgreypop h2, #titreactiv{
+        font-size: 22px;
+    }
+
+    .backgreypop h2{
+        padding-left: 15px;
+    }
+
+    footer{
+       flex-direction: column;
+    }
+
+    #logores{
+        margin-top: 5%;
+    }
+
+    #nsinscrire{
+        margin-top: -12%;
+    }
+
+    #nhebergement{
+        padding-left: 31%;
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    #searchbutton{
+        width: 60px;
+        border-radius: 15px;
+    }
+
+    .btnrechmed{
+        display: none;
+    }
+
+    .fas.fa-search{
+        display: block;
+        color: white;
+    }
+
+    #mapmarker{
+        width: 55px;
+        font-size: 20px;
+    }
+
+    .filtre{
+        flex-wrap: wrap;
+    }
+
+    #pfiltre{
+        width: 100%;
+    }
+
+    section{
+        flex-direction: column-reverse;
+    }
+
+    .backgreypop{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .marseillepop{
+        width: 90%;
+    }
+
+    .photopop{
+        width: 125px;
+    }
+
+    .hmarseille{
+        width: 100%;
+    }
+
+    .backgreyheb{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phmarseille{
+        width: 100%;
+    }
+}
