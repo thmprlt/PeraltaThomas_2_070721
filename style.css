@@ -680,12 +680,12 @@ footer ul
     .activ{
         flex-direction: column;
         padding-left: 5%;
-        margin-right: -5%;
-        width: 100%;
+        width: 90%;
     }
 
     .figactiv1, .figactiv2, .figactiv3, .figactiv4, .figactiv5, .figactiv6{
-        width: 90%;
+        width: 100%;
+        margin-right: 0;
     }
 
     .ph1, .ph2, .ph3, .ph4, .ph5, .ph6{
