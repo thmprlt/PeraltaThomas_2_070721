@@ -8,6 +8,19 @@
     font-family: 'Raleway';
 }
 
+body
+{
+    width: 100%;
+    margin: auto;
+}
+
+#logores
+{
+    padding-left: 2%;
+}
+
+/* ICÔNES */
+
 .fas, .fa
 {
     color: #0065FC;
@@ -15,7 +28,7 @@
 
 .fa.fa-star
 {
-    color: #F2F2F2;
+    color: rgb(196, 196, 196);
 }
 
 .fas.fa-map-marker-alt
@@ -23,9 +36,157 @@
     color: black;
 }
 
+.fas.fa-chart-line
+{
+    color: black;
+}
 
+.fas.fa-search
+{
+    display: none;
+}
 
-/* EN-TÊTE */
+form
+{
+    display: flex;
+    padding-left: 2%;
+}
+
+/* BARRE DE RECHERCHE */
+
+input::placeholder
+{
+    color: rgb(0, 0, 0);
+}
+
+#mapmarker
+{
+    display: inline-block;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+input
+{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px;
+    border-left: none;
+    border-right: none;
+    border-top: #F2F2F2 2px solid;
+    border-bottom: #F2F2F2 2px solid;
+    
+}
+
+#searchbutton
+{
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#searchbutton:hover
+{
+    background-color: #DEEBFF;
+    color: black;
+}
+
+/* FILTRES */
+
+#pfiltre
+{
+    display: flex;
+}
+
+.filtre
+{
+    display: flex;
+    padding-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 2%;
+}
+
+.fbouton
+{
+    display: flex;
+    position: relative;
+    margin-left: 30px;
+    border: 2px solid #dfdfdf;
+    border-left: none;
+    border-radius: 32px;
+    align-items: center;
+    padding: 0 26px 0 0;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.fbouton:hover
+{
+    background: #DEEBFF;
+    color: black;
+}
+
+.ficone
+{
+    display: flex;
+    background-color: #DEEBFF;
+    padding: 18px;
+    margin-right: 10px;
+    border-radius: 32px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+#infop
+{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.infoicone
+{
+    border: 1px solid #dfdfdf;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 2px;
+}
+
+/* EN-TÊTE NAVIGATION */
+
+h1
+{
+    font-size: 20px;
+    padding-left: 2%;
+}
+
+#h1p
+{
+    padding-left: 2%;
+}
 
 nav ul
 {
@@ -33,16 +194,21 @@ nav ul
     list-style-type: none;
     text-decoration: none;
     float: right;
+    padding-right: 2%;
 }
 
 nav a
 {
     text-decoration: none;
+    color: rgb(102, 101, 101);
 }
 
 nav a:hover
 {
     text-decoration: underline;
+    border-top: solid #0065FC;
+    color: #0065FC;
+  
 }
 
 #nhebergement
@@ -52,29 +218,288 @@ nav a:hover
 
 #nhebergement a
 {
-    padding-right: 75px;
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
+    text-decoration: none;
+    margin-right: 75px;
+    padding-top: 62px;
 }
 
 #nactivites a
 {
-    padding-right: 75px;
-    color: rgb(92, 92, 92);
+    text-decoration: none;
+    margin-right: 75px;
+    padding-top: 62px;
 }
 
 #nsinscrire a
 {
+    text-decoration: none;
     color: #0065FC;
+    padding-top: 62px;
 }
+
+.mednav
+{
+    display: flex;
+}
+
+/* SECTION HEBERGEMENTS */
+
+.pheb
+{
+    font-size: 18px;
+    padding-left: 5%;
+    margin-top: 4%;
+}
+
+.pheb2
+{
+    padding-left: 5%;
+    margin-top: -5%;
+}
+
+.starfa
+{
+    padding-left: 5%;
+    margin-top: -5%;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.hmarseille
+{
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 15px;
+    padding-top: 1%;
+}
+
+.hmarseille h2
+{
+    margin-left: 7%;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.backgreyheb
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.phmarseille
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 20px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    transition: 0.2s;
+}
+
+.photohebergement
+{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+#afficherplus
+{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-top: 3%;
+}
+
+/* SECTION POPULAIRES */
+
+.ppop
+{
+    font-size: 18px;
+}
+
+.fas.fa-chart-line
+{
+    padding-right: 12%;
+}
+
+.ppop2
+{
+    margin-top: -5%;
+}
+
+.starfapop
+{
+    margin-top: 18%;
+}
+
+.starfapop2
+{
+    margin-top: 30%;
+}
+.backgreypop
+{
+    background-color: #F2F2F2;
+    width: 31%;
+    border-radius: 15px;
+    padding-bottom: 1%;
+}
+
+.backgreypop h2
+{
+    font-size: 26px;
+    padding: 0 20px;
+    padding-top: 10px;
+    padding-left: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populaire
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marseillepop
+{
+    display: flex;
+    background-color: white;
+    width: 70%;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    transition: 0.2s;
+}
+
+.marseillepop figcaption
+{
+    padding-left: 5%;
+}
+
+.photopop, .photopop2
+{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+}
+/* ACTIVITES */
+
+
+
+#titreactiv
+{
+    padding-top: 2%;
+    margin-bottom: 1%;
+    padding-left: 2%;
+}
+
+.activ p
+{
+    margin-left: 5%;
+}
+
+.activ
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    padding-left: 2%;
+}
+
+.fortiles, .notreparc
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.figactiv1, .figactiv4
+{
+    margin-left: 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    width: 20%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.ph1, .ph4
+{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 480px;
+}
+
+.figactiv2, .figactiv3, .figactiv5, .figactiv6
+{
+    margin-left: 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px grey;
+    transition: 0.2s;
+}
+
+.ph2, .ph3, .ph5, .ph6
+{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+}
+
+.ph2
+{
+    width: 400px;
+    height: 260px;
+}
+
+.ph5
+{
+    width: 400px;
+    height: 194px;
+}
+
+.ph3
+{
+    height: 135px;
+}
+
+.ph6
+{
+    height: 200px;
+}
+
 /* FOOTER */
 
 footer
 {
     background-color: #F2F2F2;
     display: flex;
-    margin: 10px;
     justify-content: space-around;
+    width: 100%;
 }
 
 footer a
@@ -91,7 +516,7 @@ footer a:hover
 footer ul
 {
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .lfooter
@@ -99,4 +524,260 @@ footer ul
     width: 100%;
     line-height: 30px;
     padding: 15px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 375px) and (max-width: 667px)
+{
+
+    h1{
+        font-size: 22px;
+        margin-top: 100px;
+    }
+
+    .hmarseille h2, .backgreypop h2, #titreactiv{
+        font-size: 22px;
+    }
+
+    .backgreypop h2{
+        padding-left: 15px;
+    }
+
+    footer{
+       flex-direction: column;
+    }
+
+    .lfooter{
+        width: 90%;
+    }
+
+    #logores{
+        margin-top: 5%;
+    }
+
+    /* NAVIGATION */
+
+    header ul{
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    #nhebergement, #nactivites{
+        width: 50%;
+    }
+
+    #nhebergement a, #nactivites a{
+        display: inline-block;
+        border-bottom: 3px solid #F2F2F2;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    #nhebergement a:hover, #nactivites a:hover{
+        border-bottom: 3px solid #0065FC;
+    }
+
+    nav a:hover{
+        border-top: none;
+    }
+
+    #nsinscrire{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 35px;
+        margin-right: 10px;
+    }
+    /* BOUTON DE RECHERCHE */
+    #searchbutton{
+        width: 60px;
+        border-radius: 15px;
+    }
+
+    .btnrechmed{
+        display: none;
+    }
+
+    .fbouton{
+        margin-left: 0;
+        margin-bottom: 3%;
+    }
+
+    .fas.fa-search{
+        display: block;
+        color: white;
+    }
+
+    #mapmarker{
+        width: 55px;
+        font-size: 20px;
+    }
+
+    /* FILTRES */
+    .filtre{
+        flex-wrap: wrap;
+        padding-top: 10px;
+        justify-content: space-between;
+        font-size: 16px;
+        width: 96%;
+    }
+
+    #pfiltre{
+        width: 100%;
+    }
+
+    /* HEBERGEMENT ET POPULAIRE*/
+    section{
+        flex-direction: column-reverse;
+    }
+
+    .backgreypop{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .marseillepop{
+        width: 90%;
+    }
+
+    .photopop{
+        width: 125px;
+    }
+
+    .photopop2{
+        width: 145px;
+    }
+
+    .hmarseille{
+        width: 100%;
+        background-color: white;
+    }
+
+    .backgreyheb{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .phmarseille{
+        width: 90%;
+    }
+
+    .fas.fa-chart-line{
+        padding-right: 0;
+    }
+
+    .starfapop2{
+        margin-top: 18%;
+    }
+
+    /* ACTIVITES */
+    .activ{
+        flex-direction: column;
+        padding-left: 5%;
+        width: 90%;
+    }
+
+    .figactiv1, .figactiv2, .figactiv3, .figactiv4, .figactiv5, .figactiv6{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .ph1, .ph2, .ph3, .ph4, .ph5, .ph6{
+        width: 100%;
+        height: 130px;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px)
+{
+    nav ul{
+        margin-top: -5%;
+    }
+
+    nav a:hover{
+        color: #0065FC;
+    }
+
+    nav ul{
+        padding-top: 20px;
+    }
+
+    .filtre{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+    }
+    
+    #pfiltre{
+        width: 100%;
+    }
+
+    .fbouton{
+        margin: 0 15px 15px 0;
+        
+    }
+
+    section{
+        flex-direction: column;
+    }
+
+    .hmarseille{
+        width: 100%;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .backgreypop{
+        width: 100%;
+    }
+
+    .starfapop2{
+        margin-top: 24%;
+    }
+
+    .activ{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -3%;
+    }
+
+    .fortiles, .notreparc{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .figactiv1, .figactiv2, .figactiv3, .figactiv4, .figactiv5, .figactiv6{
+        width: 100%;
+    }
+
+    .ph2, .ph3, .ph5, .ph6{
+        width: 100%;
+        height: 200px;
+    }
+
+    .ph1, .ph4{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1745px){
+
+    section{
+        flex-direction: column;
+    }
+    .hmarseille, .backgreypop{
+        width: 100%;
+    }
+    
+    .hmarseille{
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+    }
 }
