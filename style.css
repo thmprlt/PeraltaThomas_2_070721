@@ -704,6 +704,10 @@ footer ul
         color: #0065FC;
     }
 
+    nav ul{
+        padding-top: 20px;
+    }
+
     .filtre{
         display: flex;
         flex-wrap: wrap;
@@ -760,5 +764,20 @@ footer ul
 
     .ph1, .ph4{
         height: 300px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1745px){
+
+    section{
+        flex-direction: column;
+    }
+    .hmarseille, .backgreypop{
+        width: 100%;
+    }
+    
+    .hmarseille{
+        margin-bottom: 30px;
+        padding-bottom: 20px;
     }
 }
